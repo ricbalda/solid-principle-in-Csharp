@@ -1,9 +1,5 @@
-﻿using SOLID101.LSP;
+﻿using SOLID101;
 
-// Test - LSP
-
-IEnginePowered car = new Car();
-car.StartEngine(); // Outputs "Starting the car engine."
-
-Vehicle electricCar = new ElectricCar();
-// electricCar.StartEngine(); // This line won't compile because ElectricCar does not implement IEnginePowered since ElectricCar does not need to implement engine related methods.
+// Menú interactivo para explorar los 5 principios SOLID
+var menu = new MenuSystem();
+menu.Run();
